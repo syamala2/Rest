@@ -1,0 +1,25 @@
+------------------------------------------------------------------
+--  TABLE Animal_Access_log
+------------------------------------------------------------------
+
+CREATE TABLE `Animal_Access_log`
+(
+   `Names`             varchar(40),
+   `accessTimeStamp`   timestamp DEFAULT 'CURRENT_TIMESTAMP',
+   `RequestId`         int(10)
+);
+
+
+------------------------------------------------------------------
+--  TABLE Animals
+------------------------------------------------------------------
+
+CREATE TABLE `Animals`
+(
+   id             int(10),
+   name           varchar(100),
+   region         varchar(100),
+   `accessTime`   datetime DEFAULT 'CURRENT_TIMESTAMP'
+);
+
+
